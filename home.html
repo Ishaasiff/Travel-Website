@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelWebsite</title>
+    <link rel="stylesheet" href="travel.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,600&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="home">
+        <header>
+            <div class="hero">
+                <nav>
+                    <div class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('show')">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <h3>Travel Bloom</h3>
+                        </li>
+                        <li><a class="active" href="home.html">Home Page</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><input type="text" id="searchinput" placeholder="Search for Destinations"></li>
+                        <li><button id="searchbtn">Search</button></li>
+                    </ul>
+                    <div id="destinationinfo"></div>
+                </nav>
+                <div class="hero-text">
+                    <h1>
+                        it’s a big world out there – <br>
+                        we’re here to help you <br>
+                        explore it – slowly and <br>
+                        sustainably.
+                    </h1>
+                </div>
+            </div>
+        </header>
+        <div class="description">
+            <p>Dreaming of your next adventure? At Travel Bloom, we help you turn those dreams into reality...</p>
+            <p>We believe travel is more than just reaching a destination—it’s about experiences that touch your soul...
+            </p>
+            <p>"The world is a book, and those who do not travel read only one page."</p>
+            <button>BOOK NOW</button>
+        </div>
+
+        <footer>
+            <div class="left">
+                <p>TRAVEL BLOOM</p>
+                <p>hello@travelbloom.com</p>
+                <p>Explore world-famous landmarks and hidden gems. From booking to exploring, everything simplified with
+                    Travel Bloom.</p>
+            </div>
+            <div class="right">
+                <p>CONNECT</p>
+                <div id="sociallinks">
+                    <a href="instagram">🌐</a>
+                    <a href="linkedin">💼</a>
+                    <a href="whatsapp">💬</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="travel.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="travel.css">
+</head>
+<body> 
+    <div class="about">
+    <h2>ABOUT US</h2>
+    <p class="fade-in">Travel Bloom see travel as more than simply reaching a destination—it’s an opportunity to create unforgettable moments and experience the wonders of the world. Our goal is to ensure every trip is smooth, enjoyable, and customized to your preferences. Whether you imagine unwinding by the sea, discovering rich cultures, or seeking exciting adventures, we are dedicated to bringing your vision to life.</p>
+
+    <h3 class="heading2 fade-in">HISTORY</h3>
+    <p class="fade-in">Travel Bloom began with a small group of enthusiastic explorers eager to share their passion for travel. What started as a modest venture has grown into a reliable agency, trusted by thousands of travelers worldwide. From nearby escapes to international adventures, our story has always been driven by one mission: making your travel dreams come true.</p>
+
+    <h3 class="heading3 fade-in">WHY CHOOSE US?</h3>
+    <p class="fade-in"><span>✔ Personalized Packages - </span>We design trips...</p>
+    <p class="fade-in"><span>✔ Experienced Team - </span>Our travel experts...</p>
+    <p class="fade-in"><span>✔ Affordable Prices – </span>Best deals without compromising...</p>
+    <p class="fade-in"><span>✔ Trusted by Travelers - </span>A decade of experience...</p>
+    <p class="fade-in"><span>✔ 24/7 Support – </span>Assistance before, during, and after...</p>
+</div>
+<script>
+  const faders = document.querySelectorAll('.fade-in');
+  const appearOptions = {
+    threshold: 0.2,  
+    rootMargin: "0px 0px -50px 0px"
+  };
+  const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+</script>
+</body>
+</html>
